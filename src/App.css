@@ -1,0 +1,150 @@
+section {
+  width:600px;
+  height:600px;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+}
+
+div {
+  border:3px solid black;
+}
+
+#root {
+  border: 0px;
+}
+
+section > div {
+  position:absolute;
+  width:50%;
+  height:50%;
+}
+
+section > div:nth-child(1) {
+  top:0;
+  left:0;
+  background-color:white;
+}
+
+section > div:nth-child(2) {
+  top:0;
+  right:0;
+  background-color:black;
+}
+
+section > div:nth-child(3) {
+  bottom:0;
+  left:0;
+  background-color:black;
+}
+
+section > div:nth-child(4) {
+  bottom:0;
+  right:0;
+  background-color:yellow;
+}
+
+.first-div > div {
+  position:absolute;
+  width:50%;
+  height:50%;
+}
+
+.first-div > div:nth-child(1) {
+  top:0;
+  left:0;
+  background-color:white;
+  margin-top:-3px;
+  margin-left:-3px;
+}
+
+.first-div > div:nth-child(2) {
+  top:0;
+  right:0;
+  background-color:#F400FF;
+  margin-top:-3px;
+  margin-bottom:-3px;
+}
+
+.first-div > div:nth-child(3) {
+  bottom:0;
+  left:0;
+  margin-left:-3px;
+  background-color:#F400FF;
+}
+
+.second-div > div {
+  position:absolute;
+  width:50%;
+  height:50%;
+}
+
+.second-div > div:nth-child(1) {
+  bottom:0;
+  right:0;
+  background-color:#3CFFFF;
+  margin-right:-3px;
+}
+
+.second-div > div:nth-child(2) {
+  width:50%;
+  height:50%;
+  background-color:blue;
+  position:absolute;
+  top:25%;
+  left:25%;
+  z-index:1;
+  margin-right:-3px;
+  margin-top: -6px;
+}
+
+.third-div > div {
+  width:50%;
+  height:50%;
+  background-color:white;
+  position:absolute;
+  top:25%;
+  left:25%;
+  z-index:1;
+  margin-top:3px;
+  margin-left:-9px;
+}
+
+.fifth-div {
+  width:50%;
+  height:50%;
+  background-color:#3EFF00;
+  position:absolute;
+  top:25%;
+  left:25%;
+  margin-top:-3px;
+  margin-left:-3px;
+}
+
+.fifth-div > div {
+  position:absolute;
+  width:50%;
+  height:50%;
+}
+
+.fifth-div > div:nth-child(1) {
+  left:0;
+  top:25%;
+  background-color:red;
+  z-index:2;
+  margin-bottom:-3px;
+  margin-left:-3px;
+  margin-top:-3px;
+}
+
+.fifth-div > div:nth-child(2) {
+  bottom:0;
+  left:25%;
+  background-color:white;
+  z-index:3;
+  margin-top:3px;
+  margin-bottom:-3px;
+  margin-left:-3px;
+}
